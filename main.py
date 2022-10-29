@@ -7,7 +7,7 @@ import random
 import json
 
 root = Tk()
-rand = random.randint(1,999999)
+rand = random.randint(1,999990)
 
 msg = f"Your One Time Passsword(OTP) is {9939098317}"
 
@@ -28,7 +28,7 @@ def send():
     if(a==""):
          tmb.showerror("Error", "Enter Your Mobile Number")
     elif(len(a)<10):
-        tmb.showerror("Error","Invalid Mobile Number")
+        tmb.showerror("Error","Invalid!Mobile Number")
         num.set("")
     else:
         b=tmb.askyesno("Info",f"Your Number is {a}")
@@ -45,7 +45,7 @@ def check():
         if(str(rand)==c):
             tmb.showinfo("Info","Successfull")
         else:
-            tmb.showerror("Error", "Invalid OTP")
+            tmb.showerror("Error", "Invalid OTP!")
             num.set("")
             otp.set("")
 
